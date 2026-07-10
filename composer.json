@@ -1,0 +1,8 @@
+{
+    "name": "neutron/verify",
+    "description": "Mobile Verification System",
+    "type": "project",
+    "require": {
+        "php": ">=7.4"
+    }
+}

@@ -1,0 +1,15 @@
+RewriteEngine On
+
+# Allow video/audio
+AddType video/mp4 .mp4
+AddType audio/mpeg .mp3
+
+# Security headers
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+</IfModule>
+
+# Cache static files
+<FilesMatch "\.(mp4|mp3|jpg|png|css|js)$">
+    Header set Cache-Control "public, max-age=31536000"
+</FilesMatch>
