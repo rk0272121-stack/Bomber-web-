@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $amount = isset($_POST['amount']) ? intval($_POST['amount']) : 0;
     
     if (strlen($mobile) === 10 && $amount >= 1 && $amount <= 100) {
-        $apiUrl = "https://bomber-api-ovar.onrender.com/bomb/{$mobile}/{$amount}";
+        $apiUrl = "https://bomber-api-png1.onrender.com/bomb/{$mobile}/{$amount}";
         
         $success = false;
         
